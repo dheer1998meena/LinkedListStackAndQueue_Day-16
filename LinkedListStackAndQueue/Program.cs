@@ -19,6 +19,10 @@ namespace LinkedListStackAndQueue
             stack.PushElement(30);
             stack.PushElement(56);
             stack.Display();
+            stack.Pop();
+            stack.Peek();
+            stack.IsEmpty();
+            stack.Display();
         }
     }
 }

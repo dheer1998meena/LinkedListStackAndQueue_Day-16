@@ -6,6 +6,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace LinkedListStackAndQueue
@@ -40,7 +41,7 @@ namespace LinkedListStackAndQueue
             Console.WriteLine("Displaying the Linked list stack :");
             //initialising temp variable for checking head pointer.
             Node temp = this.top;
-            // If temp is null then then print the Linked list stack is empty.
+            // If temp is null then then print the stack is empty.
             if (temp == null)
             {
                 Console.WriteLine("\n Linked List stack is empty");
@@ -57,5 +58,44 @@ namespace LinkedListStackAndQueue
                 }
             }
         }
+        /// <summary>
+        /// UC2 ability to peak and pop from the stack till it is empty
+        /// </summary>
+        //Peek from the top of the stack and displaying the element
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is empty");
+                return;
+            }
+            Console.WriteLine("top of the stack node is {0}", this.top.data);
+        }
+        /// <summary>
+        /// Popping element from the Stack till the stack is empty
+        /// </summary>
+        public void Pop()
+        {
+           if(this.top == null)
+            {
+                Console.WriteLine("Stack is empty, Again deletion not possible");
+                return;
+            }
+            Console.WriteLine("\n Value to be popped is {0}", this.top.data);
+            //Shorting the node by restoring the next node reference to current node
+            this.top = this.top.Next;
+        }
+        /// <summary>
+        /// Popping is continue  till the Stack is empty and Peeking from the top element in the Stack
+        /// </summary>
+        public void IsEmpty()
+        {
+            while(this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+        }
     }
 }
+
