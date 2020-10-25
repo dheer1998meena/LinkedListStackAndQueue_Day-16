@@ -38,7 +38,24 @@ namespace LinkedListStackAndQueue
             Console.WriteLine("Inserted element into the Queue is :" + newNode.data);
         }
         /// <summary>
-        ///  Creating DisplayList metbhod for displaying the Queue
+        /// UC4 Ability Dequeue (dlete) element from begininig of the Queue .
+        /// </summary>
+        public void DequeueElement()
+        {
+            //If queue is empty , return null
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty , Again deletion not possible");
+                return;
+            }
+            //initialising temp variable for checking head pointer.
+            Node temp = this.head;
+            // move head pointer one step ahead to delete current element.
+            this.head = this.head.Next;
+            Console.WriteLine("\n Deleted element is :" + temp.data);
+        }
+        /// <summary>
+        ///  Creating Display method for displaying the Queue
         /// </summary>
         public void Display()
         {
@@ -51,8 +68,9 @@ namespace LinkedListStackAndQueue
                 return;
             }
             else
-            {  
-                // Displaying the element in the queue using while loop 
+            {
+                // Traversing till the head of the queue
+                // Displaying the element in the queue and then incrementing the position
                 while (temp!= null)
                 {
                     Console.Write(" " + temp.data);
