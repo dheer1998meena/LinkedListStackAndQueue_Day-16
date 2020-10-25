@@ -13,7 +13,7 @@ namespace LinkedListStackAndQueue
 {
     class LinkedListStack
     {
-        // top node to mark the begining of the linked list.
+        // top node to mark the begining of the  stack.
         public Node top;
         /// <summary>
         /// UC1 Create stack and push the element in the stack.
@@ -34,32 +34,32 @@ namespace LinkedListStackAndQueue
             Console.WriteLine("New node {0} is push to stack", this.top.data);
         }
         /// <summary>
-        /// Creating DisplayList metbhod for displaying the Linkedlist
+        /// Creating DisplayList metbhod for displaying the Stack
         /// </summary>
         public void Display()
         {
             Console.WriteLine("\n Displaying the Linked list stack :");
-            //initialising temp variable for checking head pointer.
+            //initialising temp variable for checking top pointer.
             Node temp = this.top;
             // If temp is null then then print the stack is empty.
             if (temp == null)
             {
                 Console.WriteLine("Linked List stack is empty");
                 return;
-            }
-            // else we will iterating the temp til the temp is null using while loop. 
+            } 
             else
             {
+                // Displaying the element in the stack using while loop 
                 while (temp != null)
                 {
                     Console.Write(" " + temp.data);
-                    //checking if other nodes are present in the list by moving the temp to next node
+                    //checking if other nodes are present in the stack by moving the temp to next node
                     temp = temp.Next;
                 }
             }
         }
         /// <summary>
-        /// UC2 ability to peak and pop from the stack till it is empty
+        /// UC2 ability to peek and pop from the stack till it is empty
         /// </summary>
         //Peek from the top of the stack and displaying the element
         public void Peek()
