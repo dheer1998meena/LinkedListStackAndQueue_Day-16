@@ -38,15 +38,6 @@ namespace LinkedListStackAndQueue
             queue.EnqueueElement(30);
             queue.EnqueueElement(70);
             queue.Display();
-
-            //UC4 Ability Dequeue(dlete) element from begininig of the Queue.
-            queue.DequeueElement();
-            queue.Display();
-            queue.DequeueElement();
-            queue.Display();
-            queue.DequeueElement();
-            queue.Display();
-
         }
     }
 }

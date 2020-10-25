@@ -38,23 +38,6 @@ namespace LinkedListStackAndQueue
             Console.WriteLine("Inserted element into the Queue is :" + newNode.data);
         }
         /// <summary>
-        /// UC4 Ability Dequeue (dlete) element from begininig of the Queue .
-        /// </summary>
-        public void DequeueElement()
-        {
-            //If queue is empty , return null
-            if (this.head == null)
-            {
-                Console.WriteLine("Queue is empty , Again deletion not possible");
-                return;
-            }
-            //initialising temp variable for checking head pointer.
-            Node temp = this.head;
-            // move head pointer one step ahead to delete current element.
-            this.head = this.head.Next;
-            Console.WriteLine("\n Deleted element is :" + temp.data);
-        }
-        /// <summary>
         ///  Creating Display method for displaying the Queue
         /// </summary>
         public void Display()
