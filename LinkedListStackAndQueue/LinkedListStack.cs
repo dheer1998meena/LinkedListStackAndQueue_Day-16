@@ -38,13 +38,13 @@ namespace LinkedListStackAndQueue
         /// </summary>
         public void Display()
         {
-            Console.WriteLine("Displaying the Linked list stack :");
+            Console.WriteLine("\n Displaying the Linked list stack :");
             //initialising temp variable for checking head pointer.
             Node temp = this.top;
             // If temp is null then then print the stack is empty.
             if (temp == null)
             {
-                Console.WriteLine("\n Linked List stack is empty");
+                Console.WriteLine("Linked List stack is empty");
                 return;
             }
             // else we will iterating the temp til the temp is null using while loop. 
@@ -69,7 +69,7 @@ namespace LinkedListStackAndQueue
                 Console.WriteLine("Stack is empty");
                 return;
             }
-            Console.WriteLine("top of the stack node is {0}", this.top.data);
+            Console.WriteLine("\n top of the stack node is {0}", this.top.data);
         }
         /// <summary>
         /// Popping element from the Stack till the stack is empty

@@ -19,8 +19,10 @@ namespace LinkedListStackAndQueue
             stack.PushElement(30);
             stack.PushElement(56);
             stack.Display();
+            // UC2 ability to peak and pop from the stack till it is empty
             stack.Pop();
             stack.Peek();
+            stack.Display();
             stack.IsEmpty();
             stack.Display();
         }
