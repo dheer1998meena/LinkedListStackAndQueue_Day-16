@@ -15,7 +15,7 @@ namespace LinkedListStackAndQueue
         /// <param name="newData"></param>
         public void EnqueueElement(int newData)
         {
-            //Creating a new Node to Enqueue in the Queue
+            //Creating a new Node and inserting in the Queue
             Node newNode = new Node(newData);
             // Checking if condition first If the head is null then  head is pointing to the new node
             if (this.head==null)

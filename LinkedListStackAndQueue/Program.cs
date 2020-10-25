@@ -38,9 +38,6 @@ namespace LinkedListStackAndQueue
             queue.EnqueueElement(30);
             queue.EnqueueElement(70);
             queue.Display();
-
-
-
         }
     }
 }
