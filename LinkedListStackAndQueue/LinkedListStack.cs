@@ -90,9 +90,12 @@ namespace LinkedListStackAndQueue
         /// </summary>
         public void IsEmpty()
         {
+            // iterating using while loop till the stack is empty.
             while(this.top != null)
             {
+                //Its denoting the top of the element in the stack
                 Peek();
+                // Its poppping element from the stack.
                 Pop();
             }
         }
